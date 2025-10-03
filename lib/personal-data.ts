@@ -1,14 +1,14 @@
 // Personal data configuration from environment variables
 export const personalData = {
-  name: process.env.NEXT_PUBLIC_NAME || 'Ahmad Munir Malak',
-  email: process.env.NEXT_PUBLIC_EMAIL || 'ahmadmallak2004@gmail.com',
-  linkedin: process.env.NEXT_PUBLIC_LINKEDIN_URL || 'https://www.linkedin.com/in/ahmad-munir-malak-4030aa317/',
-  github: process.env.NEXT_PUBLIC_GITHUB_URL || 'https://github.com/ahmadmounir',
-  twitter: process.env.NEXT_PUBLIC_TWITTER_URL || '',
-  instagram: process.env.NEXT_PUBLIC_INSTAGRAM_URL || '',
-  portfolio: process.env.NEXT_PUBLIC_PORTFOLIO_URL || 'https://ahmadmunirmalak.com',
-  phone: process.env.NEXT_PUBLIC_PHONE || '',
-  location: process.env.NEXT_PUBLIC_LOCATION || 'Turkey',
+  name: process.env.NEXT_PUBLIC_NAME,
+  email: process.env.NEXT_PUBLIC_EMAIL,
+  linkedin: process.env.NEXT_PUBLIC_LINKEDIN_URL,
+  github: process.env.NEXT_PUBLIC_GITHUB_URL,
+  twitter: process.env.NEXT_PUBLIC_TWITTER_URL,
+  instagram: process.env.NEXT_PUBLIC_INSTAGRAM_URL,
+  portfolio: process.env.NEXT_PUBLIC_PORTFOLIO_URL,
+  phone: process.env.NEXT_PUBLIC_PHONE,
+  location: process.env.NEXT_PUBLIC_LOCATION,
 } as const
 
 // Social media links array for easy iteration

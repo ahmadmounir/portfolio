@@ -20,13 +20,13 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Ahmad Munir Malak - Full Stack Developer",
   description:
-    "Computer Engineering student with 2+ years of backend experience in ASP.NET Core and C#, and growing frontend expertise in React and Next.js. Passionate about building scalable web applications and AI-powered solutions.",
+    "Computer Engineering student with 2+ years of backend experience in .NET and C#, and growing frontend expertise in React and Next.js. Passionate about building scalable web applications and AI-powered solutions.",
   keywords: [
     "Ahmad Munir Malak",
     "Full Stack Developer",
     "Backend Developer",
     "Frontend Developer",
-    "ASP.NET Core",
+    ".NET",
     "React",
     "Next.js",
     "C#",
@@ -62,7 +62,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} antialiased`} suppressHydrationWarning>
       <body>
-        <ThemeProvider defaultTheme="dark">
+        <ThemeProvider defaultTheme="system">
           <LanguageProvider>{children}</LanguageProvider>
         </ThemeProvider>
       </body>

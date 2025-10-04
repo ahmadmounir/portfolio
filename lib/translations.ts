@@ -17,7 +17,7 @@ export const translations = {
       },
       description: {
         text: "Specializing in",
-        tech1: "ASP.NET Core",
+        tech1: ".NET",
         middle: "backend architecture and modern",
         tech2: "React/Next.js", 
         end: "frontends. 2+ years of experience building enterprise-level applications with clean code and scalable design."
@@ -28,7 +28,7 @@ export const translations = {
     about: {
       title: "About Me",
       content: [
-        "I'm a passionate Computer Engineering student with over 2 years of professional experience in backend development. My expertise lies in building robust, scalable systems using ASP.NET Core and C#.",
+        "I'm a passionate Computer Engineering student with over 2 years of professional experience in backend development. My expertise lies in building robust, scalable systems using .NET and C#.",
         "Recently, I've expanded my skill set to include modern frontend technologies like React and Next.js, allowing me to create full-stack solutions. I'm particularly interested in AI integration and building scalable architectures that solve real-world problems.",
         "I'm also deeply passionate about teaching. With over three years of experience, I’ve taught students of different ages and backgrounds in both academic subjects and programming. Beyond technology, I also serve as a Quran tutor, leading memorization circles and helping build a promising, value-driven generation. This blend of engineering and teaching allows me to not only develop systems but also inspire and empower people.",
       ],
@@ -53,7 +53,7 @@ export const translations = {
       items: {
         unimsgs: {
           title: "Unimsgs Platform",
-          description: "Comprehensive Messaging Platform built with ASP.NET Core, workflow automation, failover management and detailed reporting. Contributed as a Full Stack Developer, implementing scalable backend services and modern frontend interfaces."
+          description: "Comprehensive Messaging Platform built with .NET, workflow automation, failover management and detailed reporting. Contributed as a Full Stack Developer, implementing scalable backend services and modern frontend interfaces."
         },
         wasla: {
           title: "Waslatech (chrome extension)",
@@ -65,7 +65,7 @@ export const translations = {
         },
         wasla2: {
           title: "Whatsapp API Gateway",
-          description: "Waslatech is a WhatsApp API gateway platform that enables managing multiple WhatsApp numbers, automated messaging, chat management, and integrations. I worked as a Full Stack Developer, designing and implementing the landing page, integrating backend with ASP.NET Core and Vue.js, and handling script interactions and communications."
+          description: "Waslatech is a WhatsApp API gateway platform that enables managing multiple WhatsApp numbers, automated messaging, chat management, and integrations. I worked as a Full Stack Developer, designing and implementing the landing page, integrating backend with .NET and Vue.js, and handling script interactions and communications."
         },
         buildOurselves: {
           title: "Lets Build Ourselves",
@@ -158,7 +158,7 @@ export const translations = {
       },
       description: {
         text: "متخصص في بناء أنظمة",
-        tech1: "ASP.NET Core",
+        tech1: ".NET",
         middle: "للباك إند وواجهات حديثة بـ",
         tech2: "React/Next.js",
         end: ". أكثر من 3 سنوات من الخبرة في بناء تطبيقات مؤسسية بكود نظيف وتصميم قابل للتطوير."
@@ -169,7 +169,7 @@ export const translations = {
     about: {
       title: "نبذة عني",
       content: [
-        "أنا طالب هندسة حاسوب شغوف مع أكثر من 3 سنوات من الخبرة المهنية في تطوير الباك إند. خبرتي تكمن في بناء أنظمة قوية وقابلة للتطوير باستخدام ASP.NET Core و C#.",
+        "أنا طالب هندسة حاسوب شغوف مع أكثر من 3 سنوات من الخبرة المهنية في تطوير الباك إند. خبرتي تكمن في بناء أنظمة قوية وقابلة للتطوير باستخدام .NET و C#.",
         "مؤخراً، قمت بتوسيع مهاراتي لتشمل تقنيات الفرونت إند الحديثة مثل React و Next.js، مما يسمح لي بإنشاء حلول متكاملة. أنا مهتم بشكل خاص بدمج الذكاء الاصطناعي وبناء بنى قابلة للتطوير تحل مشاكل حقيقية.",
         "أنا أيضًا شغوفٌ جدًا بالتدريس. بخبرة تزيد عن ثلاث سنوات، درّستُ طلابًا من مختلف الأعمار والخلفيات في المواد الأكاديمية والبرمجة. بالإضافة إلى التكنولوجيا، أعمل أيضًا كمُدرّسٍ للقرآن الكريم، حيث أقود حلقات تحفيظ، وأساهم في بناء جيل واعدٍ مُلهم. هذا المزيج من الهندسة والتدريس يُمكّنني ليس فقط من تطوير الأنظمة، بل أيضًا من إلهام الناس وتمكينهم.",
       ],
@@ -194,7 +194,7 @@ export const translations = {
       items: {
         unimsgs: {
           title: "منصة Unimsgs",
-          description: "منصة مراسلة شاملة مبنية على ASP.NET Core، مع أتمتة سير العمل، وإدارة الأعطال، وتقارير مفصلة. ساهم كمطور متكامل، حيث نفّذ خدمات خلفية قابلة للتطوير وواجهات أمامية حديثة."
+          description: "منصة مراسلة شاملة مبنية على .NET، مع أتمتة سير العمل، وإدارة الأعطال، وتقارير مفصلة. ساهم كمطور متكامل، حيث نفّذ خدمات خلفية قابلة للتطوير وواجهات أمامية حديثة."
         },
         wasla: {
           title: "وصلة (إضافة كروم)",
@@ -206,7 +206,7 @@ export const translations = {
         },
         wasla2: {
           title: "بوابة API الخاصة بـ WhatsApp",
-          description: "Waslatech هي منصة بوابة API لتطبيق واتساب، تُمكّن من إدارة أرقام واتساب متعددة، والمراسلة الآلية، وإدارة المحادثات، والتكامل. عملت كمطور تطبيقات متكامل، حيث صممتُ ونفذتُ صفحة الهبوط، ودمجتُ الواجهة الخلفية مع ASP.NET Core وVue.js، وأشرفتُ على تفاعلات النصوص البرمجية والاتصالات."
+          description: "Waslatech هي منصة بوابة API لتطبيق واتساب، تُمكّن من إدارة أرقام واتساب متعددة، والمراسلة الآلية، وإدارة المحادثات، والتكامل. عملت كمطور تطبيقات متكامل، حيث صممتُ ونفذتُ صفحة الهبوط، ودمجتُ الواجهة الخلفية مع .NET وVue.js، وأشرفتُ على تفاعلات النصوص البرمجية والاتصالات."
         },
         buildOurselves: {
           title: "فلنبن أنفسنا",
@@ -299,7 +299,7 @@ export const translations = {
       },
       description: {
         text: "Backend mimarisi için",
-        tech1: "ASP.NET Core",
+        tech1: ".NET",
         middle: "ve modern frontend için",
         tech2: "React/Next.js",
         end: "konularında uzmanım. 3+ yıl deneyimle temiz kod ve ölçeklenebilir tasarımla kurumsal uygulamalar geliştiriyorum."
@@ -310,7 +310,7 @@ export const translations = {
     about: {
       title: "Hakkımda",
       content: [
-        "Backend geliştirmede 3 yıldan fazla profesyonel deneyime sahip tutkulu bir Bilgisayar Mühendisliği öğrencisiyim. Uzmanlığım ASP.NET Core ve C# kullanarak sağlam, ölçeklenebilir sistemler oluşturmaktır.",
+        "Backend geliştirmede 3 yıldan fazla profesyonel deneyime sahip tutkulu bir Bilgisayar Mühendisliği öğrencisiyim. Uzmanlığım .NET ve C# kullanarak sağlam, ölçeklenebilir sistemler oluşturmaktır.",
         "Son zamanlarda, tam yığın çözümler oluşturmama olanak tanıyan React ve Next.js gibi modern frontend teknolojilerini içerecek şekilde beceri setimi genişlettim. Özellikle yapay zeka entegrasyonu ve gerçek dünya sorunlarını çözen ölçeklenebilir mimariler oluşturmakla ilgileniyorum.",
         "Öğretmenliğe de tutkuyla bağlıyım. Üç yılı aşkın deneyimimle, farklı yaş ve geçmişlerden gelen öğrencilere hem akademik konularda hem de programlama alanında ders verdim. Teknolojinin yanı sıra, bir Kuran öğretmeni olarak da hizmet veriyor, ezberleme gruplarına liderlik ediyor ve gelecek vaat eden, değer odaklı bir nesil yetiştirmeye yardımcı oluyorum. Mühendislik ve öğretmenliğin bu birleşimi, yalnızca sistemler geliştirmemi değil, aynı zamanda insanlara ilham vermemi ve onları güçlendirmemi de sağlıyor.",
       ],
@@ -335,7 +335,7 @@ export const translations = {
       items: {
         unimsgs: {
           title: "Unimsgs Platform",
-          description: "ASP.NET Core ile geliştirilmiş kapsamlı mesajlaşma platformu, iş akışı otomasyonu, yedekleme yönetimi ve detaylı raporlama. Ölçeklenebilir arka uç hizmetleri ve modern ön uç arayüzleri uygulayarak Full Stack Developer olarak katkıda bulundum."
+          description: ".NET ile geliştirilmiş kapsamlı mesajlaşma platformu, iş akışı otomasyonu, yedekleme yönetimi ve detaylı raporlama. Ölçeklenebilir arka uç hizmetleri ve modern ön uç arayüzleri uygulayarak Full Stack Developer olarak katkıda bulundum."
         },
         wasla: {
           title: "Waslatech (chrome eklentisi)",
@@ -347,7 +347,7 @@ export const translations = {
         },
         wasla2: {
           title: "Whatsapp API Ağ Geçidi",
-          description: "Waslatech, birden fazla WhatsApp numarasını yönetmeyi, otomatik mesajlaşmayı, sohbet yönetimini ve entegrasyonları sağlayan bir WhatsApp API ağ geçidi platformudur. Tam Yığın Geliştirici olarak çalıştım; açılış sayfasını tasarlayıp uyguladım, arka ucu ASP.NET Core ve Vue.js ile entegre ettim ve betik etkileşimlerini ve iletişimlerini yönettim."
+          description: "Waslatech, birden fazla WhatsApp numarasını yönetmeyi, otomatik mesajlaşmayı, sohbet yönetimini ve entegrasyonları sağlayan bir WhatsApp API ağ geçidi platformudur. Tam Yığın Geliştirici olarak çalıştım; açılış sayfasını tasarlayıp uyguladım, arka ucu .NET ve Vue.js ile entegre ettim ve betik etkileşimlerini ve iletişimlerini yönettim."
         },
         buildOurselves: {
           title: "Kendimizi İnşa Edelim",

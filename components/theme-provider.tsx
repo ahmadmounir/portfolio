@@ -2,7 +2,7 @@
 
 import * as React from "react"
 
-type Theme = "dark" | "light"
+type Theme = "dark" | "light" | "system"
 
 type ThemeProviderProps = {
   children: React.ReactNode
@@ -16,41 +16,68 @@ type ThemeProviderState = {
 }
 
 const initialState: ThemeProviderState = {
-  theme: "dark",
+  theme: "system",
   setTheme: () => null,
 }
 
 const ThemeProviderContext = React.createContext<ThemeProviderState>(initialState)
 
+function getSystemTheme(): "dark" | "light" {
+  if (typeof window !== "undefined") {
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
+  }
+  return "dark"
+}
+
+function applyTheme(theme: Theme) {
+  const root = window.document.documentElement
+  root.classList.remove("light", "dark")
+  
+  if (theme === "system") {
+    const systemTheme = getSystemTheme()
+    root.classList.add(systemTheme)
+  } else {
+    root.classList.add(theme)
+  }
+}
+
 export function ThemeProvider({
   children,
-  defaultTheme = "dark",
+  defaultTheme = "system",
   storageKey = "portfolio-theme",
   ...props
 }: ThemeProviderProps) {
   const [theme, setTheme] = React.useState<Theme>(defaultTheme)
 
   React.useEffect(() => {
-    const root = window.document.documentElement
     const stored = localStorage.getItem(storageKey) as Theme | null
+    const initialTheme = stored || defaultTheme
+    
+    setTheme(initialTheme)
+    applyTheme(initialTheme)
 
-    if (stored) {
-      setTheme(stored)
-      root.classList.remove("light", "dark")
-      root.classList.add(stored)
-    } else {
-      root.classList.add(defaultTheme)
+    // Listen for system theme changes
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)")
+    const handleChange = () => {
+      if (theme === "system") {
+        applyTheme("system")
+      }
     }
+
+    mediaQuery.addEventListener("change", handleChange)
+    return () => mediaQuery.removeEventListener("change", handleChange)
   }, [defaultTheme, storageKey])
+
+  React.useEffect(() => {
+    applyTheme(theme)
+  }, [theme])
 
   const value = {
     theme,
-    setTheme: (theme: Theme) => {
-      localStorage.setItem(storageKey, theme)
-      const root = window.document.documentElement
-      root.classList.remove("light", "dark")
-      root.classList.add(theme)
-      setTheme(theme)
+    setTheme: (newTheme: Theme) => {
+      localStorage.setItem(storageKey, newTheme)
+      setTheme(newTheme)
+      applyTheme(newTheme)
     },
   }
 

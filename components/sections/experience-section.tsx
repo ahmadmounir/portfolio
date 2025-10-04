@@ -34,7 +34,7 @@ export function ExperienceSection() {
       period: t.experience.items.plutosoft.period,
       duration: t.experience.items.plutosoft.duration,
       description: t.experience.items.plutosoft.description,
-      technologies: ["ASP.NET Core", "C#", "Vue.js", "SQL", "Web Development", "Enterprise Architecture", "Chrome Extensions", "Team Collaboration"],
+      technologies: [".NET", "C#", "Vue.js", "SQL", "Web Development", "Enterprise Architecture", "Chrome Extensions", "Team Collaboration"],
     },
   ]
 

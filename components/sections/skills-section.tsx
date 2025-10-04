@@ -2,12 +2,10 @@
 
 import { Card } from "@/components/ui/card"
 import { Code2, Database, Layers, Wrench, Globe } from "lucide-react"
-import { useEffect, useRef, useState } from "react"
 import { useLanguage } from "@/lib/language-context"
 
 export function SkillsSection() {
-  const [isVisible, setIsVisible] = useState(false)
-  const sectionRef = useRef<HTMLElement>(null)
+
   const { t } = useLanguage()
 
   const skillCategories = [
@@ -16,10 +14,8 @@ export function SkillsSection() {
       icon: Code2,
       color: "from-emerald-500 to-teal-500",
       skills: [
-        "ASP.NET Core",
+        ".NET",
         "C#",
-        "Express.js",
-        "Node.js",
         "RESTful APIs",
         "Authentication & Authorization",
         "Enterprise Architecture",
@@ -35,7 +31,6 @@ export function SkillsSection() {
         "TypeScript",
         "JavaScript",
         "Vite",
-        "Vue.js",
         "Chrome Extensions",
         "Responsive Design",
         "Modern CSS",
@@ -68,25 +63,8 @@ export function SkillsSection() {
     },
   ]
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true)
-        }
-      },
-      { threshold: 0.1 },
-    )
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current)
-    }
-
-    return () => observer.disconnect()
-  }, [])
-
   return (
-    <section id="skills" ref={sectionRef} className="py-20 px-4 relative">
+    <section id="skills" className="py-20 px-4 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-secondary/20 to-transparent" />
 
       <div className="container mx-auto max-w-6xl relative z-10">
@@ -106,9 +84,7 @@ export function SkillsSection() {
             return (
               <Card
                 key={category.title}
-                className={`p-6 bg-card/50 backdrop-blur-sm transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-500/20 group ${
-                  isVisible ? "animate-fade-in-up" : "opacity-0"
-                }`}
+                className={`p-6 bg-card/50 backdrop-blur-sm transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-500/20 group `}
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="flex items-center gap-3 mb-4">

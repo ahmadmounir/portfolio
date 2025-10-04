@@ -34,7 +34,7 @@ export function ProjectsSection() {
       title: t.projects.items.unimsgs.title,
       description: t.projects.items.unimsgs.description,
       image: unimsgsImg,
-      tags: ["ASP.NET Core", "C#", "SQL Server", "Gulp", "Vue.js"],
+      tags: [".NET", "C#", "SQL Server", "Gulp", "Vue.js"],
       demo: "https://www.unimsgs.com/",
       gradient: "from-emerald-500 to-teal-500",
     },
@@ -52,7 +52,7 @@ export function ProjectsSection() {
       title: t.projects.items.bazarat.title,
       description: t.projects.items.bazarat.description,
       image: bazaratImg,
-      tags: ["ASP.NET Core", "C#", "Dapper", "Vue.js", "SEO", "Modular Architecture"],
+      tags: [".NET", "C#", "Dapper", "Vue.js", "SEO", "Modular Architecture"],
       demo: "https://portal.bazaratonline.com/",
       gradient: "from-green-500 to-emerald-500",
     },
@@ -61,7 +61,7 @@ export function ProjectsSection() {
       title: t.projects.items.wasla2.title,
       description: t.projects.items.wasla2.description,
       image: wasla2Img,
-      tags: ["ASP.NET Core", "Vue.js", "Automation", "Web Integration", "Landing Page"],
+      tags: [".NET", "Vue.js", "Automation", "Web Integration", "Landing Page"],
       demo: "https://waslatech.io/",
       github: "",
       gradient: "from-lime-500 to-teal-500",
@@ -104,7 +104,7 @@ export function ProjectsSection() {
           {projects.map((project, index) => (
             <Card
               key={project.key}
-              className={`overflow-hidden bg-card/50 backdrop-blur-sm shadow-lg shadow-emerald-500/10 group transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-500/20 ${
+              className={`overflow-hidden bg-card/80 backdrop-blur-sm shadow-lg shadow-emerald-500/30 group transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-500/20 ${
                 isVisible ? "animate-fade-in-up" : "opacity-0"
               }`}
               style={{ animationDelay: `${index * 150}ms` }}
@@ -131,7 +131,7 @@ export function ProjectsSection() {
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-2 py-1 bg-secondary/50 backdrop-blur-sm text-foreground rounded text-xs font-mono shadow-sm shadow-emerald-500/10"
+                      className="px-2 py-1 bg-secondary/50 backdrop-blur-sm text-foreground rounded text-xs font-mono shadow-md shadow-emerald-500/10"
                     >
                       {tag}
                     </span>

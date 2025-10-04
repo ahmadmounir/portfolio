@@ -105,7 +105,7 @@ export function HeroSection() {
               <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px] mx-auto border-none rounded-2xl overflow-hidden shadow-2xl shadow-emerald-500/20 bg-gradient-to-br from-secondary/50 to-card/50 backdrop-blur-sm">
                 <Image
                   src="/photo.jpg"
-                  alt={personalData.name}
+                  alt={personalData.name || "Ahmad Munir Malak"}
                   fill
                   className="object-cover"
                   priority
